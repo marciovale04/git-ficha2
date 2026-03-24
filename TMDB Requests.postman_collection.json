@@ -1,0 +1,401 @@
+{
+  "info": {
+    "_postman_id": "0c0b7720-e0a3-4359-93de-cf0400562495",
+    "name": "TMDB Requests",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "49575850"
+  },
+  "item": [
+    {
+      "name": "Get Popular Movies",
+      "request": {
+        "auth": {
+          "type": "inherit"
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://api.themoviedb.org/3/movie/popular?api_key=a7e41a986f280b1e55d038588ee69f25&language=pt-PT",
+          "protocol": "https",
+          "host": [
+            "api",
+            "themoviedb",
+            "org"
+          ],
+          "path": [
+            "3",
+            "movie",
+            "popular"
+          ],
+          "query": [
+            {
+              "key": "api_key",
+              "value": "a7e41a986f280b1e55d038588ee69f25",
+              "sortOrder": 0
+            },
+            {
+              "key": "language",
+              "value": "pt-PT",
+              "sortOrder": 1
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get Movie Details",
+      "request": {
+        "auth": {
+          "type": "inherit"
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://api.themoviedb.org/3/movie/550?api_key=a7e41a986f280b1e55d038588ee69f25&language=pt-PT",
+          "protocol": "https",
+          "host": [
+            "api",
+            "themoviedb",
+            "org"
+          ],
+          "path": [
+            "3",
+            "movie",
+            "550"
+          ],
+          "query": [
+            {
+              "key": "api_key",
+              "value": "a7e41a986f280b1e55d038588ee69f25",
+              "sortOrder": 0
+            },
+            {
+              "key": "language",
+              "value": "pt-PT",
+              "sortOrder": 1
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Search Batman",
+      "request": {
+        "auth": {
+          "type": "inherit"
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://api.themoviedb.org/3/search/movie?api_key=a7e41a986f280b1e55d038588ee69f25&language=pt-PT&query=Batman",
+          "protocol": "https",
+          "host": [
+            "api",
+            "themoviedb",
+            "org"
+          ],
+          "path": [
+            "3",
+            "search",
+            "movie"
+          ],
+          "query": [
+            {
+              "key": "api_key",
+              "value": "a7e41a986f280b1e55d038588ee69f25",
+              "sortOrder": 0
+            },
+            {
+              "key": "language",
+              "value": "pt-PT",
+              "sortOrder": 1
+            },
+            {
+              "key": "query",
+              "value": "Batman",
+              "sortOrder": 2
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get Batman Details",
+      "request": {
+        "auth": {
+          "type": "inherit"
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://api.themoviedb.org/3/movie/268?api_key=a7e41a986f280b1e55d038588ee69f25&language=pt-PT",
+          "protocol": "https",
+          "host": [
+            "api",
+            "themoviedb",
+            "org"
+          ],
+          "path": [
+            "3",
+            "movie",
+            "268"
+          ],
+          "query": [
+            {
+              "key": "api_key",
+              "value": "a7e41a986f280b1e55d038588ee69f25",
+              "sortOrder": 0
+            },
+            {
+              "key": "language",
+              "value": "pt-PT",
+              "sortOrder": 1
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Create Session",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"request_token\": \"868291a4130f470095e090b46acb4555f74200c2\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://api.themoviedb.org/3/authentication/session/new?api_key=a7e41a986f280b1e55d038588ee69f25",
+          "protocol": "https",
+          "host": [
+            "api",
+            "themoviedb",
+            "org"
+          ],
+          "path": [
+            "3",
+            "authentication",
+            "session",
+            "new"
+          ],
+          "query": [
+            {
+              "key": "api_key",
+              "value": "a7e41a986f280b1e55d038588ee69f25"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get Account Details",
+      "request": {
+        "auth": {
+          "type": "inherit"
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://api.themoviedb.org/3/account?api_key=a7e41a986f280b1e55d038588ee69f25&session_id=c16845eeb026e0f65ed6ba6e36b9c6a45c05e76f",
+          "protocol": "https",
+          "host": [
+            "api",
+            "themoviedb",
+            "org"
+          ],
+          "path": [
+            "3",
+            "account"
+          ],
+          "query": [
+            {
+              "key": "api_key",
+              "value": "a7e41a986f280b1e55d038588ee69f25",
+              "sortOrder": 0
+            },
+            {
+              "key": "session_id",
+              "value": "c16845eeb026e0f65ed6ba6e36b9c6a45c05e76f",
+              "sortOrder": 1
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Add Favorite Movie",
+      "request": {
+        "auth": {
+          "type": "inherit"
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"media_type\": \"movie\",\n  \"media_id\": 550,\n  \"favorite\": true\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://api.themoviedb.org/3/account/22871924/favorite?api_key=a7e41a986f280b1e55d038588ee69f25&session_id=c16845eeb026e0f65ed6ba6e36b9c6a45c05e76f",
+          "protocol": "https",
+          "host": [
+            "api",
+            "themoviedb",
+            "org"
+          ],
+          "path": [
+            "3",
+            "account",
+            "22871924",
+            "favorite"
+          ],
+          "query": [
+            {
+              "key": "api_key",
+              "value": "a7e41a986f280b1e55d038588ee69f25",
+              "sortOrder": 0
+            },
+            {
+              "key": "session_id",
+              "value": "c16845eeb026e0f65ed6ba6e36b9c6a45c05e76f",
+              "sortOrder": 1
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get Top Rated Movies",
+      "request": {
+        "auth": {
+          "type": "inherit"
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://api.themoviedb.org/3/movie/top_rated?api_key=a7e41a986f280b1e55d038588ee69f25&language=pt-PT",
+          "protocol": "https",
+          "host": [
+            "api",
+            "themoviedb",
+            "org"
+          ],
+          "path": [
+            "3",
+            "movie",
+            "top_rated"
+          ],
+          "query": [
+            {
+              "key": "api_key",
+              "value": "a7e41a986f280b1e55d038588ee69f25",
+              "sortOrder": 0
+            },
+            {
+              "key": "language",
+              "value": "pt-PT",
+              "sortOrder": 1
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get Action Movies",
+      "request": {
+        "auth": {
+          "type": "inherit"
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://api.themoviedb.org/3/discover/movie?api_key=a7e41a986f280b1e55d038588ee69f25&with_genres=28&language=pt-PT",
+          "protocol": "https",
+          "host": [
+            "api",
+            "themoviedb",
+            "org"
+          ],
+          "path": [
+            "3",
+            "discover",
+            "movie"
+          ],
+          "query": [
+            {
+              "key": "api_key",
+              "value": "a7e41a986f280b1e55d038588ee69f25",
+              "sortOrder": 0
+            },
+            {
+              "key": "with_genres",
+              "value": "28",
+              "sortOrder": 1
+            },
+            {
+              "key": "language",
+              "value": "pt-PT",
+              "sortOrder": 2
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get Movie Cast",
+      "request": {
+        "auth": {
+          "type": "inherit"
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://api.themoviedb.org/3/movie/550/credits?api_key=a7e41a986f280b1e55d038588ee69f25&language=pt-PT",
+          "protocol": "https",
+          "host": [
+            "api",
+            "themoviedb",
+            "org"
+          ],
+          "path": [
+            "3",
+            "movie",
+            "550",
+            "credits"
+          ],
+          "query": [
+            {
+              "key": "api_key",
+              "value": "a7e41a986f280b1e55d038588ee69f25",
+              "sortOrder": 0
+            },
+            {
+              "key": "language",
+              "value": "pt-PT",
+              "sortOrder": 1
+            }
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
